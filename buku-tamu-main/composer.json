@@ -1,0 +1,28 @@
+{
+    "name": "bageur/buku-tamu",
+    "description": "Buku Tamu builder for cms bageur",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bageur solusi indonesia",
+            "email": "bageur.inc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.3",
+        "mews/captcha": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bageur\\BukuTamu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bageur\\BukuTamu\\BukuTamuServiceProvider"
+            ]
+        }
+    }
+}
